@@ -10,7 +10,9 @@ $render->setMetaDescription("Unity Asset Server Browser");
 
 // and an overview on each
 foreach(AServer::GetDatabases() as $db)
-	$render->addContent(new W_DatabaseOverview($db));
+{
+    $render->addContent(new W_DatabaseOverview($db));
+}
 
 $render->display();
 
