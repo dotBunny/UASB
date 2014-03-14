@@ -1,30 +1,41 @@
 Unity Asset Server Browser
 ---------------------------------------------------
 
-Hey everyone, first and foremost the orginal version of this was created by 
+Hey everyone, first and foremost the original version of this was created by 
 Matthew Wegner @ Flashbang Studios. He provided an excellent base to work with,
 and I simply added to his outstanding job. You can find his original work here:
 
 http://technology.blurst.com/unity-asset-server-web-browser/
 
 REQUIREMENTS
+---
+
 - PHP w/ PostgreSQL compiled in
 
+install psql.
+
 INSTALLATION
+---
+
 On your first visit to the site it will create the config.php file for you, or 
 if permissions do not allow it, complain. I didn't feel like making a fancy 
 installer like WordPress, maybe sometime.
 
-* 	You will need to edit _php/config.php and fill out the settings
+* You will need to edit _php/config.php and fill out the settings. The setting of PostgreSQL is UnityAssetServer's one.
 
-* 	You MUST make _tpl_c writable by the server, this is where the template 
+
+* You MUST make _tpl_c writable by the server, this is where the template 
 	drops the cached files.
 
 SUPPORT
+---
+
 Any issues can be reported @ http://github.com/dotBunny/UASB/issues
 Due to time commitments to our normal projects, support may be very limited.
 
 CODE QUALITY
+---
+
 Matthew Weager wrote ...
 
 "The entire browser was coded in one day (we spend our Fridays doing 
@@ -39,6 +50,8 @@ I only add, that this was the first time I used the Smarty template system,
 it's been an experiment adding things so please bear with me.
 
 CONTACT
+---
+
 Matthew Davey aka "Reapazor" on the Unity Forums
 
 
