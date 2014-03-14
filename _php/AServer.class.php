@@ -8,7 +8,7 @@ class AServer
 	static $render;
 	static function GetDatabasesByUsername($username) {
 
-		if ( !session_is_registered("databases") || empty($_SESSION['databases']) ) {
+		if ( !isset( $_SESSION['databases'] ) || empty($_SESSION['databases']) ) {
 
 			$query = "SELECT * FROM all_databases__view ORDER BY databasename";
 			$list = DB::getDB()->objectArray($query);
@@ -54,7 +54,7 @@ class AServer
 		}
 	}
 	static function GetDatabaseProjectNames() {
-		if ( !session_is_registered("projects") ) {
+		if ( !isset( $_SESSION['projects'] )) {
 				if ( empty($_SESSION['databases'])) {
 					return null;
 				}
