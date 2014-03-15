@@ -4,7 +4,7 @@ $db = $_GET["db"];
 $serial = $_GET["serial"];
 
 include("_inc.php");
-$project = AServer::GetDatabaseProjectName($db)
+$project = AServer::GetDatabaseProjectName($db);
 
 DB::getDB()->connect($db);
 
