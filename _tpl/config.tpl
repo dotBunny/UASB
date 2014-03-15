@@ -13,3 +13,5 @@ define("HTTPROOT", "http://address.to.your.site");
 
 // --- REMOVE THIS, AND THE FOLLOWING LINES WHEN YOU EDIT THIS FILE ---
 die("Edit your configuration file!");
+
+?>
