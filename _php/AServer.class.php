@@ -10,6 +10,8 @@ class AServer
 
         if ( !isset( $_SESSION['databases'] ) || empty($_SESSION['databases']) ) {
 
+			$databases = array();
+
             $query = "SELECT * FROM all_databases__view ORDER BY databasename";
             $list = DB::getDB()->objectArray($query);
 
@@ -55,6 +57,7 @@ class AServer
     }
     static function GetDatabaseProjectNames() {
         if ( !isset( $_SESSION['projects'] )) {
+			$projects = array();
                 if ( empty($_SESSION['databases'])) {
                     return null;
                 }
