@@ -35,7 +35,7 @@ class W_DatabaseOverview extends Widget
 		$query = "
 			SELECT p.username, c.serial, c.description, c.creator, extract(epoch from c.commit_time) as time
 			FROM changeset c, person p
-			WHERE c.creator = p.serial AND c.comit_time IS NOT NULL
+			WHERE c.creator = p.serial AND c.commit_time IS NOT NULL
 			ORDER BY commit_time DESC
 			LIMIT 20
 		";
