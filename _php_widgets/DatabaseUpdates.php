@@ -23,7 +23,7 @@ class W_DatabaseUpdates extends Widget
             FROM changeset c, person p
             WHERE c.creator = p.serial
                 $whereSerial
-            ORDER BY commit_time DESC
+            ORDER BY c.serial DESC
         ";
         $result = DB::getDB()->query($query);
         while($row = pg_fetch_array($result))

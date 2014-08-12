@@ -88,6 +88,7 @@ class DB {
 	*/
 	public function objectArray($query)
 	{
+		$values = array();
 		$result = $this->query($query);
 		while($row = pg_fetch_object($result))
 			$values[] = $row;
